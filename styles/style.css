@@ -1,0 +1,375 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+@font-face {
+   font-family: 'Gilroy';
+   src: url(../fonts/Gilroy-Semibold.ttf);
+}
+
+@font-face {
+   font-family: 'Merriweather';
+   src: url(../fonts/Merriweather-Black.ttf);
+}
+
+body {
+   background-color: #191411; 
+   font-family: 'Gilroy', sans-serif;
+   color: white;
+}
+
+.wrapper {
+   overflow: hidden;
+   background-image: url(../images/main_bg.png);
+   background-position: top center;
+   /* background-repeat: no-repeat;
+   background-size: cover; */
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.button {
+   border-radius: 8px;
+   background: linear-gradient(135deg, #DA8023 0%, #E2B438 100%); 
+   width: 260px;
+   height: 62px; 
+   box-sizing: border-box;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 0;
+   cursor: pointer;
+   outline: none;
+   font-size: 18px;
+   color: #191411;
+   transition: 0.3s;
+}
+
+.button:hover {
+   background: linear-gradient(135deg, #ac6115 0%, #9e7a19 100%); 
+   transform: scale(1.08);
+}
+
+.common-tittle {
+   font-family: 'Merriweather', sans-serif;
+   font-size: 64px;
+   line-height: 80px;
+   text-align: center;
+   letter-spacing: 0.03em;
+   text-transform: uppercase; 
+}
+
+.header {
+   padding: 40px 0px;
+}
+
+.header .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.logo img {
+   vertical-align: bottom;
+}
+
+.menu-list {
+   list-style: none;
+   display: flex;
+   width: 599px;
+   justify-content: space-between;
+}
+
+.menu-item a {
+   font-size: 18px;
+   color: #ffffff;
+   text-decoration: none;
+   cursor: pointer;
+   display: flex;
+   transition: 0.3s;
+}
+
+.menu-item a:hover {
+   border-bottom: 2px solid white;
+   transform: scale(1.05);
+}
+
+.currency {
+   width: 45px;
+   height: 45px;
+   border-radius: 5px;
+   border: 1px solid #FFF; 
+   padding: 6px;
+   box-sizing: border-box;
+   text-align: center;
+   cursor: pointer;
+   line-height: 32px;
+   user-select: none;
+   transition: 0.3s;
+}
+
+.currency:hover {
+   transform: scale(1.2);
+}
+
+
+
+/*------main-section------*/
+.main-content {
+   margin-top: 103px;
+   margin-bottom: 199px;
+}
+
+.main-content .container {
+   position: relative;
+}
+
+.main-info {
+   max-width: 608px;
+}
+
+.main-small-info {
+   border-radius: 100px;
+   background: #D3320F;
+   padding: 12px 16px;
+   display: inline-block;
+   font-size: 18px;
+}
+
+.main-tittle {
+   font-family: 'Merriweather', sans-serif;
+   font-size: 120px;
+   font-style: normal;
+   font-weight: 900;
+   line-height: 130%; /* 156px */
+   letter-spacing: 3.6px;
+   text-transform: uppercase; 
+
+   margin-bottom: 56px;
+}
+
+.main-text {
+   font-size: 24px;
+   line-height: normal; 
+
+   margin-bottom: 56px;
+}
+
+.main-image {
+   position: absolute;
+   top: -123px;
+   left: calc(100% - 991px);
+}
+
+
+/*------why-section------*/
+.why {
+   background-image: url(../images/whybg.png);
+   background-position: top center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-bottom: 180px;
+}
+
+
+.why-items {
+   margin-top: 60px;
+   display: grid;
+   gap: 100px;
+   grid-template-columns: repeat(3, 312px);
+   justify-content: center;
+}
+
+.why-item {
+   text-align: center;
+}
+
+.why-item-tittle {
+   font-size: 24px;
+   line-height: normal; 
+   padding: 24px 0px;
+}
+
+.why-item-text {
+   font-size: 16px;
+   line-height: 140%; /* 22.4px */ 
+}
+
+
+
+/*------products-section------*/
+.products {
+   background-image: url(../images/burgers_bg.png);
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-size: 1400px;
+   padding-bottom: 180px;
+}
+
+.products-items {
+   display: grid;
+   grid-template-columns: repeat(3, 384px);
+   gap: 24px;
+   margin-top: 60px;
+}
+
+.products-item {
+   padding: 30px;
+   background:#211A16; 
+   border-radius: 16px;
+   border: 1px solid #353535;
+   transition: 0.3s; 
+}
+
+.products-item:hover {
+   transform: scale(1.05);
+}
+
+.products-item-image {
+   height: 250px;
+}
+
+.products-item-image img {
+   max-width: 100%;
+}
+
+.products-item-tittle {
+   font-size: 24px;
+   line-height: 29px;
+   padding: 24px 0;
+}
+
+.products-item-text {
+   font-size: 16px;
+   line-height: 140%;
+   margin-bottom: 24px;
+}
+
+.products-item-extra {
+   display: flex;
+   justify-content: space-between;
+}
+
+.products-item-price {
+   font-size: 32px;
+   line-height: normal; 
+   margin-bottom: 8px;
+}
+
+.products-item-weight {
+   color: #757575;
+   font-size: 16px;
+   line-height: normal; 
+}
+
+.button.product-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 182px;
+   height: 62px;
+
+}
+
+.button.product-button span:first-child {
+   margin-right: 10px;
+}
+
+
+/*------order-section------*/
+.order {
+   background-image: url(../images/order_bg.png);
+   background-position: top center;
+   background-repeat: no-repeat;
+   padding-bottom: 180px;
+   overflow: hidden;
+}
+
+.order .container {
+   position: relative;
+}
+
+.order-image {
+   position: absolute;
+   top: 0;
+   right: calc(100% - 764px);
+   z-index: -1;
+}
+
+.order-form {
+   border-radius: 16px;
+   border: 1px solid #353535;
+   background: #211A16; 
+   margin-top: 60px;
+   max-width: 426px;
+   box-sizing: border-box;
+   padding: 60px 40px;
+   margin-left: 674px;
+}
+
+.order-form-text {
+   text-align: center;
+   font-size: 24px;
+   line-height: 29px; 
+}
+
+.order-form-inputs {
+   display: flex;
+   flex-direction: column;
+   margin-top: 40px;
+}
+
+.order-form-input {
+   background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+   width: 344px;
+   height: 62px;
+   border-radius: 8px;
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: 0.3s;
+}
+.order-form-input:hover {
+   transform: scale(1.05);
+}
+
+.order-form-input input {
+   padding: 20px 10px;
+   border-radius: 8px;
+   background: #211A16; 
+   width: 342px;
+   height: 60px;
+   box-sizing: border-box;
+   outline: none;
+   border: 1px solid transparent;
+   color: #ffffff;
+}
+
+.order-form-inputs .button {
+   width: 344px;
+   height: 62px;
+}
+
+
+/* --- footer --- */
+
+.footer {
+   padding: 60px 0px;
+}
+
+.footer .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.rights {
+   font-size: 16px;
+   line-height: 20px; 
+}
